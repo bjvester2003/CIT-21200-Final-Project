@@ -1,0 +1,515 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* General */
+
+html {
+    background-color: rgba(57, 90, 114, 0.849);
+}
+
+a {
+    background-color: rgb(46, 57, 63);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 40px;
+    color: black;
+}
+
+h2 {
+    font-size: 30px;
+    color: black;
+}
+
+h3 {
+    font-size: 20px;
+    color: black;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(40, 74, 92);
+    text-align: center;
+}
+
+.home {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: rgb(80, 116, 128);
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background-image: url(../images/House_aoe2DE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+
+.container {
+    width: 98%;
+    height: 80%;
+    background-color: rgb(65, 97, 114);
+    position: absolute;
+    top: 12%;
+    left: 1%;
+}
+
+footer {
+    width: 100%;
+    height: 6%;
+    background-color: rgb(46, 57, 63);
+    position: fixed;
+    bottom: 0;
+}
+
+/* Index */ 
+
+.inf h3 {
+    position: relative;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inf p {
+    position: relative;
+    padding: 2.5px;
+}
+
+.inf1 {
+    width: 64%;
+    height: 42%;
+    background-color: rgb(80, 116, 128);
+    position: relative;
+    top: 1.75%;
+    left: .5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inf_logo {
+    width: 40%;
+    height: calc(96% - 4px);
+    background-color: rgb(47, 71, 84);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin: auto;
+    margin-left: 5%;
+    min-width: 220px;
+    background-image: url(../images/index/inf/logo2.jpg);
+}
+
+
+.inf2 {
+    width: 64%;
+    height: calc(52% - 4px);
+    background-color: rgb(80, 116, 128);
+    position: relative;
+    top: 4.25%;
+    left: .5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inf_play {
+    width: 40%;
+    height: calc(96% - 4px);
+    background-color: rgb(47, 71, 84);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin: auto;
+    margin-left: 5%;
+    min-width: 220px;
+    background-image: url(../images/index/inf/age-of-empires-2-definitive-edition-1.jpg);
+}
+
+.inf_txt {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+.linkcont {
+    width: 34%;
+    height: 96%;
+    background-color: rgb(47, 71, 84);
+    position: relative;
+    top: -92%;
+    left: 65.6%;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.link{
+    width: 90%;
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    flex: 0 1 80px;
+    min-height: 60px;
+    text-align: center;
+}
+
+
+.link h2 {
+    color: rgb(48, 48, 48);
+    opacity: 0;
+    text-shadow: 1px 1px 2px rgb(50, 48, 48);
+    background: rgba(104, 151, 183, 0.799);
+    border-radius: 20px;
+    max-width: 6.5em;
+    margin-top: .25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link:hover {
+    box-shadow: 4px 4px 8px rgb(28, 28, 30);
+}
+
+.link:hover h2 {
+    opacity: 100%;
+    transition-duration: .75s;
+}
+
+/* Index_Scrollbar */
+
+.linkcont::-webkit-scrollbar {
+    width: 15px;
+}
+  
+.linkcont::-webkit-scrollbar-track {
+    background: rgb(49, 89, 111);
+}
+  
+.linkcont::-webkit-scrollbar-thumb {
+    background: rgb(94, 133, 152);
+}
+  
+.linkcont::-webkit-scrollbar-thumb:hover {
+    background: rgb(29, 60, 79);
+}
+
+/* Units */
+
+.unitcard {
+    width: 250px;
+    height: 300px;
+    background-color: rgb(49, 89, 111);
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+.unit_inf {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-color: rgba(34, 34, 34, 0);
+    border-radius: 20px;
+}
+
+.unit_inf h3 {
+    opacity: 0%;
+    padding: 10px;
+    color: rgb(238, 238, 234);
+}
+
+.unit_inf p {
+    opacity: 0%;
+    padding: 5px;
+    color: rgb(238, 238, 234);
+}
+
+.unit_inf a {
+    opacity: 0%;
+    color: rgb(238, 238, 234);
+    background: none;
+}
+
+.unit_inf:hover {
+    background-color: rgba(34, 34, 34, 0.900);
+    transition: .75s;
+}
+
+.unit_inf:hover h3 {
+    opacity: 100%;
+}
+
+.unit_inf:hover p {
+    opacity: 100%;
+}
+
+.unit_inf:hover a {
+    opacity: 100%;
+}
+
+.unit_inf:hover a:hover {
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+/* Civilizations */
+
+.civ {
+    width: 95%;
+    height: 200px;
+    background-color: rgb(47, 71, 84);
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.civ_img {
+    width: 35%;
+    height: 100%;
+    background-color: rgb(47, 71, 84);
+    border-right: 3px solid black;
+    border-radius: 25px 0px 0px 25px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.civ_inf {
+    width: calc(65% - 3px);
+    height: 100%;
+    border-radius: 0px 25px 25px 0px;
+    position: relative;
+    top: -100%;
+    left: calc(35% + 3px);
+}
+
+/* Civ_Scrollbar */
+
+.container::-webkit-scrollbar {
+    width: 15px;
+}
+  
+.container::-webkit-scrollbar-track {
+    background: rgb(49, 89, 111);
+    border-radius: 10px;
+}
+  
+.container::-webkit-scrollbar-thumb {
+    background: rgb(47, 71, 84);
+    border-radius: 10px;
+}
+  
+.container::-webkit-scrollbar-thumb:hover {
+    background: rgb(35, 74, 98);
+}
+
+/* Civ_Flipcard */
+
+
+.flip-card h3 {
+    padding: 10px;
+}
+
+.flip-card p {
+    padding: 5px;
+}
+
+.flip-card a {
+    margin: 10px;
+    background: none;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.flip-card a:hover {
+    background-color: rgb(40, 73, 100);
+    transition: 1s;
+    font-size: 16px;
+}
+
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-front {
+    background-color: rgb(65, 97, 114);
+    display: flex;
+    flex-direction: column;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotatex(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    border-radius: 0px 25px 25px 0px;
+    position: absolute;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.flip-card-back {
+    background-color: rgb(65, 97, 114);
+    color: white;
+    transform: rotatex(180deg);
+    display: flex;
+    flex-direction: row;
+}
+
+.civ_unit {
+    width: 25%;
+    height: 11em;
+    background-color: rgb(47, 71, 84);
+    border-radius: 20px;
+    position: relative;
+    left: 2.5%;
+    top: calc((100% - 11em) / 2);
+    border: 2px solid black;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flip_txt {
+    width: 65%;
+    height: 11em;
+    position: relative;
+    left: 6%;
+    top: calc((100% - 11em) / 2);
+}
+
+/* History */
+
+.his_inf h2 {
+    padding: 10px;
+}
+
+.his_inf h3 {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.his_inf p {
+    padding: 5px;
+}
+
+.his_inf a {
+    margin: 20px;
+    background: none;
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.his_inf a:hover {
+    background-color: rgb(40, 73, 100);
+    transition: 1s;
+    font-size: 17px;
+}
+
+.his_inf {
+    width: 60%;
+    height: 500px;
+    background-color: rgb(49, 89, 111);
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow-y: scroll;
+    border-radius: 25px 10px 10px 25px ;
+}
+
+.his_img {
+    width: 60%;
+    height: 250px;
+    background-color: rgb(46, 57, 63);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* History_Scrollbar */
+
+.his_inf::-webkit-scrollbar {
+    width: 15px;
+}
+  
+.his_inf::-webkit-scrollbar-track {
+    background: rgb(49, 89, 111);
+    border-radius: 10px;
+}
+  
+.his_inf::-webkit-scrollbar-thumb {
+    background: rgb(47, 71, 84);
+    border-radius: 10px;
+}
+  
+.his_inf::-webkit-scrollbar-thumb:hover {
+    background: rgb(35, 74, 98);
+}
